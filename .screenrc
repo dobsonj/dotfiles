@@ -1,6 +1,6 @@
 shell -${SHELL}  # dash (-) is for login shells
 shelltitle ''
-dynamictitle off
+#dynamictitle off
 vbell off
 autodetach on
 startup_message off
