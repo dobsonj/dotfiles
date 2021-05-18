@@ -1,0 +1,2 @@
+# see https://bugzilla.redhat.com/show_bug.cgi?id=1954366
+set enable-bracketed-paste off
