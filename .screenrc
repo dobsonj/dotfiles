@@ -1,6 +1,6 @@
 shell -${SHELL}  # dash (-) is for login shells
 shelltitle ''
-#dynamictitle off
+defdynamictitle off
 vbell off
 autodetach on
 startup_message off
@@ -8,7 +8,7 @@ defscrollback 8192
 altscreen on
 
 hardstatus alwayslastline
-hardstatus string "%{= kc}%-Lw%{=r}%20>%n %t%{= kc}%+Lw %{= kc}%-=| %{= kw}%M%d %c%{-} %{=r} ${USER}@%H "
+hardstatus string "%{= kc}%-Lw%{=r}%20>%n %t%{= kc}%+Lw %{= kc}%-=| %{= kw}%M%d %c%{-} %{=r} %S "
 
 # %{= kc}       set color to cyan on black.
 # %{= ck}     set color to black on cyan.
@@ -20,4 +20,5 @@ hardstatus string "%{= kc}%-Lw%{=r}%20>%n %t%{= kc}%+Lw %{= kc}%-=| %{= kw}%M%d 
 # %M%d        month and day, like MmmDD.
 # %c          current time, like HH:MM.
 # %H          hostname
+# %S          session name
 
